@@ -2,9 +2,9 @@
 layout: default
 ---
 
-# TCO476-new5 Overview
+# Home Page
 
-The **TCO476-new5** project tests the github pages documentation for a github repo.
+The **Ag sensor documentation** project tests the github pages documentation for a github repo.
 
 
 <div class="home">
