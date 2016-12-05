@@ -4,6 +4,7 @@ title: Proposal
 date: 2016-11-14 11:43:44 +0000
 permalink: /Proposal/
 ---
+[[images/MercerEGR.jpg]]
 
 Multi-Sensor Mesh Network for Agricultural Analysis
 
