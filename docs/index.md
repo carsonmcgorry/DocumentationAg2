@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Home Page
+# Welcome to the project
 
 The **Ag Sensor documentation** project tests the github pages documentation for a github repo.
 This site hosts all files and resources related to the Agricultural Multi-Sensor Nodal Network with Mesh Network Wireless Communication Topology project. 
