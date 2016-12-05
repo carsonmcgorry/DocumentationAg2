@@ -23,6 +23,7 @@ url: "http://BenKasson1.github.io/DocumentationAg2" # the base hostname & protoc
 twitter_username: BenKasson
 github_username:  BenKasson1
 include: ['pages']
+include: ['posts']
 
 # Build settings
 markdown: kramdown
