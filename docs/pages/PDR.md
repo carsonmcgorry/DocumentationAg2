@@ -115,7 +115,7 @@ Executive summary
 
 - [Bill of materials](#bill-of-materials)
 
-- [Team Resumes](#team-resumes)
+- [Team Resumés](#team-resumes)
 
 &nbsp;
 
@@ -147,29 +147,21 @@ Executive summary
 &nbsp;
 
 ## List of Tables
-**Table 1:** Microcontroller features
-10
+[**Table 1:**](#table-1-microcontroller-features) Microcontroller features
 
-**Table 2:** Microcontroller feasibility analysis
-13
+[**Table 2:**](#table-2-microcontroller-feasibility-analysis) Microcontroller feasibility analysis
 
-**Table 3:** Microcontroller merit analysis
-13
+[**Table 3:**](#table-3-microcontroller-merit-analysis) Microcontroller merit analysis
 
-**Table 4:** Communication protocol feasibility analysis
-15
+[**Table 4:**](#table-4-communication-protocol-feasibility-analysis) Communication protocol feasibility analysis
 
-**Table 5:** Communication protocol merit analysis
-16
+[**Table 5:**](#table-5-communication-protocol-merit-analysis) Communication protocol merit analysis
 
-**Table 6:** Sensor node average current consumption calculations for one hour
-22
+[**Table 6:**](#table-6-sensor-node-average-current-consumption-calculations-for-one-hour) Sensor node average current consumption calculations for one hour
 
-**Table 7:** Typical alkaline battery life calculation values
-22
+[**Table 7:**](#table-7-typical-alkaline-battery-life-calculation-values-24) Typical alkaline battery life calculation values
 
-**Table 8:** Bill of Materials
-24
+[**Table 8:**](#c-table-8-bill-of-materials) Bill of materials
 
 &nbsp;
 
@@ -211,9 +203,13 @@ The Oso Technologies PlantLink costs $80, senses soil moisture, has 50,000 plant
 
 The Koubachi Wi-Fi Plant Sensor costs $100, senses soil moisture, temperature, and sunlight. It has 800 plants in its database. This sensor uses Wi-Fi to transmit its data and 2 AA batteries that can power it for over a year. The Koubachi sensor offers ample choices to its users when it comes to interfaces as it has an iOS, Android, and Web applications. The Edyn Garden Sensor costs $100, senses soil moisture, temperature, light, fertilizer, pesticide, and humidity levels. It has 5000 plants in its database, uses Wi-Fi to transmit data and a solar powered battery that can last 2.5 years. The Edyn sensor has an iOS and Android app that the user can use as an interface.
 
+&nbsp;
+
 ## Project description
 
 This project requires the design and construction of low-power, agricultural sensor nodes capable of mesh network communication and a software system to analyze and present the data collected from the sensors. The sensors will be selected according to the client’s specifications to measure three required soil attributes of moisture level, temperature, and pH level at three equally separated depths. The nodes will be stationary columns, two feet in length, designed to be driven into the ground. The microcontroller, wireless communicator, and the power supply will be the only above ground, surface level components of each node. The nodes will have housing to protect the circuitry of the sensors, microcontroller, wireless communicator, and power supply from damage. The nodes will be battery powered and will communicate information wirelessly from node to node to transmit soil attribute data packets back to a central station that will run the analysis software. The soil attribute data packets will be created by software in the node microcontrollers and will contain the environmental data along with the location, depth, and, time of the reading from each node. The software will collect these packets to construct graphical views of the data. This will provide the end user with a clear understanding of the data to expedite decision making for maintenance of networked regions. The pseudo code for the sensor node and A&P app software can be seen in Appendix A.
+
+&nbsp;
 
 ## Feasibility and merit criteria, specs
 
@@ -235,57 +231,104 @@ The client gave the following set of specifications for the proof of concept des
 * **Wireless communication protocol:** mesh network capable 
 
 The team decided that the following additional specifications were necessary to make engineering decisions for the proof of concept design:
-Node spacing: 10m - 40m (33 ft - 130 ft)
-Reading frequency: once per hour
+
+- Node spacing: 10m - 40m (33 ft - 130 ft)
+- Reading frequency: once per hour
+
 The network needed a central station to collect the data from the other nodes and an A&P application for presenting the data to the end user in a clear and concise manner. The central station that will contain A&P application would need to communicate through a wifi communication protocol. The A&P app would need to present the collected information with daily line charts for data from each node and with separate current time graphic displays for each soil data type for the networked area to show the data values on a gradient scale at each of the 3 depths.
 The team and the client discussed the scope of the project and realized the need of a mechanical engineer to create an adequately designed final product. The client decided that a proof of concept design would be sufficient for the time allowed. In light of this, more focus was given to the electrical and computer components of the project over the mechanical component. Design decisions for this stage of the project were focused on which microcontroller, wireless communication protocol, sensors, user interface, and power supply would be used. The sections to follow will cover the criteria used to determine feasibility and merit criteria for these components.
-Microcontroller
-Feasibility Criteria
+
+&nbsp;
+
+### Microcontroller
+
+Feasibility criteria:
+
 The following criteria are factors which must be satisfied by the chosen processor:
-Current consumption is less than 500 µA/MHz
-Has sleep mode functionality
-Merit Criteria
+
+- Current consumption is less than 500 µA/MHz
+- Has sleep mode functionality
+
+Merit criteria:
+
 Out of the feasible options, low current consumption was the most important metric in determining the best low-power alternative. Better scores in Active mode current consumption per million clock cycles (µA/MHz) and Sleep mode current consumption (nA) would be given to lower consumption values.
-Communication protocol chip
-Feasibility Criteria
+
+&nbsp;
+
+### Communication protocol chip
+
+Feasibility criteria:
+
 The following criteria are factors which must be satisfied by the chosen communication protocol chip:
-10 meters minimum range of transmission and reception
-Transmit and receive wirelessly
-Operate on a low power mode
-Communicate using mesh network topology
-Merit Criteria
-Out of the feasible options, large communication range and number of connections along with low cost and power consumption were the most important metrics in determining the best low-power alternative. The cheaper unit cost of the wireless communication chip, the better it would be. Longer maximum communication range was considered better. The same goes for maximum node connection. Low power consumption was considered in battery life in days if the communication chip was powered alone. The more days the chip could last under battery power, the better the chip would be.
-Sensors
-Feasibility Criteria
+
+- 10 meters minimum range of transmission and reception
+- Transmit and receive wirelessly
+- Operate on a low power mode
+- Communicate using mesh network topology
+
+Merit criteria:
+
+Out of the feasible options, large communication range and number of connections along with low cost and power consumption were the most important metrics in determining the best low-power alternative. The cheaper unit cost of the wireless communication chip, the better it would be. Longer maximum communication range was considered better.
+
+The same goes for maximum node connection. Low power consumption was considered in battery life in days if the communication chip was powered alone. The more days the chip could last under battery power, the better the chip would be.
+
+&nbsp;
+
+### Sensors
+
+Feasibility criteria:
+
 The following criteria are factors which must be satisfied by the chosen sensors:
-Function in soil for a season 
-Unit cost is less than $15
-Interface with chosen microcontroller
-Analog output (soil moisture sensor)
-Waterproof (soil temperature sensor)
-Merit Criteria
+
+- Function in soil for a season 
+- Unit cost is less than $15
+- Interface with chosen microcontroller
+- Analog output (soil moisture sensor)
+- Waterproof (soil temperature sensor)
+
+Merit criteria:
+
 Out of the feasible options, low cost was considered an important metric for all three sensor types. The cheaper unit cost of the sensor, the better it would be. The soil temperature sensor would need to provide accurate readings over a range of temperatures that soil in growing regions could be at throughout a season. That preferred range was -15℃  to +45℃ (-5℉ to +113℉). The more of that range the sensor was designed to accurately output, the greater its merit would be.
-User interface
-Feasibility Criteria
+
+&nbsp;
+
+### User interface
+
+Feasibility criteria:
+
 The following criteria are factors which must be satisfied by the chosen user interface:
-Expertise: team possesses skill set to properly develop the interface
-Portability: the interface can be accessed by all popular OSs
-Merit Criteria
+
+- Expertise: team possesses skill set to properly develop the interface
+- Portability: the interface can be accessed by all popular OSs
+
+Merit criteria:
+
 Out of the feasible options, ease of use was considered an important metric. Ease of use refers to simplicity of accessing the A&P application and intuitive navigation within the A&P application.
-Power supply
-Feasibility Criteria
+
+&nbsp;
+
+### Power supply
+
+Feasibility criteria:
+
 The following criteria are factors which must be satisfied by the chosen power supply:
-Disposable battery 
-Last at least one season
-Minimum supply voltage of 5V
-Merit Criteria
-	The power supply criterion to provide a battery source that lasts for at least a season led to using reverse engineering to calculate the power the total circuit would require for a season once all other components were selected. The most suitable type of battery available would supply adequate power for the whole system for at least one season and be no less than 5V.
-Design alternatives
+
+- Disposable battery 
+- Last at least one season
+- Minimum supply voltage of 5V
+
+Merit criteria:
+
+The power supply criterion to provide a battery source that lasts for at least a season led to using reverse engineering to calculate the power the total circuit would require for a season once all other components were selected. The most suitable type of battery available would supply adequate power for the whole system for at least one season and be no less than 5V.
+
+&nbsp;
+
+## Design alternatives
 The sections to follow will cover the design alternatives for the microcontroller, wireless communication protocol, sensors, and user interface.
 
 Microcontroller
   
-**Table 1: Microcontroller features**
+#### **Table 1: Microcontroller features**
   
 |                                  | Pi[2]                            | Mega[3]           | Ambiq Micro[4]                | STM32 L4[5]                  | EFM32[6]                     | Atmel[7]                     |
 |----------------------------------|----------------------------------|-------------------|-------------------------------|------------------------------|------------------------------|------------------------------|
@@ -318,7 +361,7 @@ shows the Mega and the Pi were the only two microcontrollers to not pass the fea
 
 &nbsp;
 
-**Table 2: Microcontroller feasibility analysis**
+#### **Table 2: Microcontroller feasibility analysis**
   
 |                                    | Pi[2] | Mega[3] | Ambiq Micro[4] | STM32 L4[5] | EFM32[6] | Amtel[7] |
 |------------------------------------|-------|---------|----------------|-------------|----------|----------|
@@ -327,7 +370,7 @@ shows the Mega and the Pi were the only two microcontrollers to not pass the fea
 
 &nbsp;
 
-**Table 3: Microcontroller merit analysis**
+#### **Table 3: Microcontroller merit analysis**
   
 |                                  | Ambiq Micro[4] | STM32 L4[5] | EFM32[6]             | Atmel[7] |
 |----------------------------------|----------------|-------------|----------------------|----------|
@@ -347,7 +390,7 @@ As per the client’s specifications, the communication protocol had to be capab
 
 &nbsp;
 
-**Table 4 Communication protocol feasibility analysis**
+#### **Table 4: Communication protocol feasibility analysis**
   
 |                    | Zigbee   | Wi-Fi     | Bluetooth[12] |
 |--------------------|----------|-----------|---------------|
@@ -365,7 +408,7 @@ Figure 3 Microchip Technology MRF24J40MAT-I/RM ZigBee transceiver[25]
  
 &nbsp;
  
-**Table 5 Communication protocol merit analysis**
+#### **Table 5: Communication protocol merit analysis**
   
 |                         | Zigbee            | Wi-Fi              |
 |-------------------------|-------------------|--------------------|
@@ -407,7 +450,7 @@ IA and IS represent the respective active and sleep currents in milliamps (mA) o
 
 &nbsp;
 
-**Table 6 Sensor node average current consumption calculations for one hour**
+#### **Table 6: Sensor node average current consumption calculations for one hour**
   
 |                              | Current (mA) |         | Time (ms) |         | Average continuous current consumed for one hour (mA) |
 |------------------------------|--------------|---------|-----------|---------|-------------------------------------------------------|
@@ -421,7 +464,7 @@ IA and IS represent the respective active and sleep currents in milliamps (mA) o
 
 &nbsp;
 
-**Table 7 Typical alkaline battery life calculation values [24]**
+#### **Table 7: Typical alkaline battery life calculation values [24]**
   
 | Battery type   | Capacity (mAh) | Typical Drain (mA) |
 |----------------|----------------|--------------------|
@@ -553,6 +596,8 @@ Gantt chart
  
  &nbsp;
  
+#### C. Table 8: Bill of materials
+
 | Component                              | Unit(s) | Seller        | Unit cost | Total cost |
 |----------------------------------------|---------|---------------|-----------|------------|
 | Arduino hygrometer[20]                 | 3       | Resistor Park | $2.75     | $8.25      |
@@ -572,7 +617,7 @@ Gantt chart
 &nbsp;
 
 
-Team Resumes
+## Team Resumés
 
 
 
