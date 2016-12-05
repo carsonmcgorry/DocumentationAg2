@@ -8,6 +8,7 @@ permalink: /PDR/
 **This document still needs EXTENSIVE edits to be markdown presentable.**
 
 
+![Mercer Engineering](https://github.com/BenKasson1/DocumentationAg2/blob/master/docs/assets/images/MercerEGR.jpg "Engineering different by design")
 
 
 
