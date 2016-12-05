@@ -324,9 +324,15 @@ Figure 5 Sparkfun Electronics’ “DS18B20 Waterproof Temperature Sensor”[16]
 DFRobot’s “pH Meter” and the Luster Leaf were checked against the feasibility and merit criteria to determine which potential soil pH sensor would be selected for this project. The former was priced at $29.50 and was not designed for use in soil, though it was designed to interface with a microcontroller[23]. The later was priced at $10.99 and was designed specifically to be used in soil, but was designed as a general consumer product[19]. Despite the fact that both alternatives failed at least one feasibility criterion (microcontroller interface capability, costing less than $15, and in-soil operability), the Luster Leaf’s “Digital Soil pH Meter” was selected as the best alternative for a soil pH sensor because it was the alternative that met the most feasibility criteria. Though the chosen alternative, as shown in Figure 6 on the following page, was not designed to interface with an external microcontroller, the sensor’s circuitry can be taken out of its housing for analysis and modification to allow it to interface with a microcontroller as the project requires.
 
 Figure 6 Luster Leaf’s “Digital Soil pH Meter”[19]
+
+
 User interface
+
 The team selected three different user interface alternatives for this project. These interfaces will give the end user a visual representation of the collected data. The team considered an Android app, iOS app, and Web interface. The Android and iOS apps are only compatible with their respective OSs, unlike the Web which can be accessed by both OSs as well as Windows and Linux OSs. As for the expertise, Daniel and Pierre have developed Android apps in the past, Pierre has some experience with web applications, and none the team members had experience with iOS apps. As for the ease of use, the team determined that all three interfaces would be easy to use for anyone who is computer literate. The Web interface was chosen as the desired alternative because it was the only truly portable interface and had the greatest ease of use.
+
+
 Design work accomplished
+
 After the client approved the team’s proposal, the team had a meeting with him to make certain of the requirements and specifications for the project along with the funding options in case the budget for the project went beyond the amount MUSE would cover. The team determined the five main components of the project to be considered in this proof of concept stage. The components are microcontroller, communication protocol, sensors, user interface, and power supply.The team then conducted intensive research to find design alternatives for each component of the project. The team then performed feasibility and merit analysis for each of the five main components of the project. Afterward, the team analyzed each component’s datasheet to make sure that the chosen components would be compatible with one another. The team then determined how the components can be integrated to work as a whole system. A simple visualization of the node below the soil, as seen in in Figure 7, shows the idea of the different depths the sensors will be attached at.Then the team considered what appropriate test plans would be to determine if the system is functioning as intended.
 
 Figure 7 Sensor node component general locations
@@ -379,11 +385,17 @@ tlife represents the approximate amount of time a battery will last in hours. CB
 Using the results from Table 6, the capacity given for a AA battery in Table 7, and the tlife equation, the lifespan of a battery running a sensor node as designed would be approximately 25783 hours which is nearly six seasons, assuming 4320 hours in a season. Using the Vhalf-life equation would mean that four (4) AA alkaline batteries would reliably power a sensor node for at least three seasons. This oversupply on the power supply lifespan will be used as a defense against the result of temperature variation among other aspects that could result in a quicker loss of charge in the batteries.
 Performance prediction
 The team is confident in the calculations made and research conducted for the components of the proof of concept design. The good review rates of the components by other purchasers is also promising for the reliability of the components. The team believes that the proof of concept design will run smoothly and efficiently based on these three things.  
+
+
 Project schedule
+
+
 A graphical breakdown of this section can be seen in appendix B. Research for and work on the proposal was conducted from August 23, 2016 through September 6, 2016 when the proposal was due. Preliminary design of the project and component research began on September 6, 2016 upon the proposal’s approval and continued until October 10, 2016. During that time, the team worked on the first project report from September 30, 2016 through October 6, 2016 when it was presented. With feedback gathered from the progress report, designs were refined and the budget was adjusted to account for errors in preliminary estimations. The team performed engineering calculations and merit analysis of design alternatives from October 10, 2016 through November 8, 2016. During that time, the team worked on the second project report from November 7, 2016 through October 8, 2016 when it was presented. The team worked on the first draft PDR write-up on November 1, 2016 through November 10, 2016. The team gave the PDR write-up to a TCO team from November 11, 2016 to November 12, 2016. Final edits of the PDR took the feedback from the TCO team into account and went from November 12, 2016 through November 14, 2016, the due date of the PDR document. The team will prepare a presentation on the PDR from November 14, 2016 to November 16, 2016, and give the PDR presentation on November 17, 2016. After the PDR is presented, the team will make changes as the client, advisors, and managers specify. Once accepted, the team will order parts on November 21, 2016 and will expect all parts to arrive by December 9, 2016.
 
 
 After winter break ends on January 9, 2017, the team plans to begin to build the nodes and write the code. The team expects to be done with the first build by February 24, 2017. The team plans to do the first test phase on, February 27 - 28, 2017. The team plans to assess the results of the first tests and make corrections to the system from March 1 - 6, 2017. The team expects to then perform a second round of testing on March 8 -10, 2017. Afterwards, the team plans to make more corrections based off the results of the second round of testing on March 10 - 13, 2017. The team expects to do a final round of testing and corrections on March 13 - 20, 2017. The project should be in a deliverable state by March 20, 2017.
+
+
 Budget
 Appendix C indicates how many units of each component is required, the unit cost, seller, and the total price of all components necessary to build the project. The team has been informed by the client that they can cover any remainder in the budget above the $300 dollars given by MUSE. The breadboard will be used while figuring out the proper wiring for the sensor node.
 Proposed tests
@@ -393,8 +405,14 @@ To check for accurate data transmission, the team will send a control packet thr
 After an initial test under temperate conditions, the team will proceed to create environments similar to the ones at the farms by adding a lot of water to the soil to simulate the results of a heavy rainstorm, ice to simulate the results of a cold snap, and dryness to simulate the summer heat. The entire system will be tested in these environments to ensure proper functionality in different weather conditions and seasons to give a well detailed user guide to the client.
 Conclusion and Recommendation
 After thorough research on components of the system as well as feasibility and merit evaluation, the team recommends the uses of the following components for individual nodes. An STM32 L4 as the microcontroller, the Luster Leaf as the pH sensor, the DS18B20 as the temperature sensor, the Arduino Hygrometer as the soil moisture sensor, a ZigBee transceiver for the communication protocol, and three AA alkaline batteries as a power supply. As for the user interface and central station, the team recommends a Web interface and a Pi, respectively. The estimated budget for this system is $350 which will be provided by the MUSE and our client, Dr. Choi. With the information provided, the team would like to ask permission to move forward to the build and test phase of this proof of concept project.
+
+
 Acknowledgment
-	The team would like to acknowledge and thank the individuals who contributed to the successful completion of this project:our client, Dr. Anthony Choi; our technical advisors Dr. Donald Ekong, Dr. Kevin Barnett, and Dr. Edward O’Brien; and our manager Dr. Hodges Jenkins. These MUSE faculty members have been instrumental on all aspects of this project throughout this semester. The team would also like to acknowledge Ben Kasson and Carson McGorry who helped edit the PDR document as well as Ryan Alyamani and Ahmed Alshammari for illustration assistance.   
+
+	The team would like to acknowledge and thank the individuals who contributed to the successful completion of this project:our client, Dr. Anthony Choi; our technical advisors Dr. Donald Ekong, Dr. Kevin Barnett, and Dr. Edward O’Brien; and our manager Dr. Hodges Jenkins. These MUSE faculty members have been instrumental on all aspects of this project throughout this semester. The team would also like to acknowledge Ben Kasson and Carson McGorry who helped edit the PDR document as well as Ryan Alyamani and Ahmed Alshammari for illustration assistance.
+	
+	
+	
 References
 [1]
 A. Gebhart, "Smart home garden tech buying guide," CNET, 16 September 2015. [Online]. Available: http://www.cnet.com/news/smart-outdoors-buying-guide/. [Accessed 5 September 2016].
