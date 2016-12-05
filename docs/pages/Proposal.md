@@ -5,6 +5,7 @@ date: 2016-11-14 11:43:44 +0000
 permalink: /Proposal/
 ---
 ![Mercer Engineering](https://github.com/BenKasson1/DocumentationAg2/blob/master/docs/assets/images/MercerEGR.jpg "Logo Title Text 1")
+
 Multi-Sensor Mesh Network for Agricultural Analysis
 
 Client: T. Anthony Choi
