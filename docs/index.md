@@ -4,12 +4,17 @@ layout: default
 
 # Home Page
 
-The **Ag sensor documentation** project tests the github pages documentation for a github repo.
+The **Ag Sensor documentation** project tests the github pages documentation for a github repo.
+This site hosts all files and resources related to the Agricultural Multi-Sensor Nodal Network with Mesh Network Wireless Communication Topology project. 
+
+*Below* are the design teams portfolios, click their names to learn more. *Above* to the upper right is the documentation for the various stages of project development. 
+
+Lastly the **about** page describes the process for this site to be updated and maintained. 
 
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">SME Information</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
